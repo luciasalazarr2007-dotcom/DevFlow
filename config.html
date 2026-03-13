@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFlow - Ajustes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">Dev<span>Flow</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html"><span>Dashboard</span></a></li>
+                <li><a href="stats.html"><span>Estadísticas</span></a></li>
+                <li><a href="tasks.html"><span>Tareas</span></a></li>
+                <li><a href="config.html" class="active"><span>Ajustes</span></a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <h1>Configuración</h1>
+                <p>Personaliza tu entorno de desarrollo.</p>
+            </header>
+
+            <form>
+                <div class="form-group">
+                    <label>Nombre de Usuario</label>
+                    <input type="text" value="Estudiante_Pro">
+                </div>
+                
+                <div class="form-group">
+                    <label>Correo Electrónico</label>
+                    <input type="email" value="dev@grado-medio.es">
+                </div>
+
+                <div class="form-group">
+                    <label>Nivel de Estudiante</label>
+                    <select>
+                        <option>1º Grado Medio</option>
+                        <option selected>2º Grado Medio</option>
+                        <option>Grado Superior</option>
+                    </select>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <h3>Preferencias</h3>
+                    <div class="toggle-switch" style="max-width: 500px; margin-top: 1rem;">
+                        <span>Modo Oscuro</span>
+                        <input type="checkbox" checked>
+                    </div>
+                    <div class="toggle-switch" style="max-width: 500px;">
+                        <span>Notificaciones de Escritorio</span>
+                        <input type="checkbox">
+                    </div>
+                    <div class="toggle-switch" style="max-width: 500px;">
+                        <span>Autoguardado</span>
+                        <input type="checkbox" checked>
+                    </div>
+                </div>
+
+                <button type="button" style="background: var(--accent); color: white; border: none; padding: 1rem 2rem; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 1rem;">
+                    Guardar Cambios
+                </button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

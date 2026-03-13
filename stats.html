@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFlow - Estadísticas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">Dev<span>Flow</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html"><span>Dashboard</span></a></li>
+                <li><a href="stats.html" class="active"><span>Estadísticas</span></a></li>
+                <li><a href="tasks.html"><span>Tareas</span></a></li>
+                <li><a href="config.html"><span>Ajustes</span></a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <h1>Análisis de Rendimiento</h1>
+                <p>Métricas detalladas de tus lenguajes y herramientas.</p>
+            </header>
+
+            <section class="grid-cards">
+                <div class="card">
+                    <h3>Dominio de HTML/CSS</h3>
+                    <p class="value">92%</p>
+                    <div style="background: #334155; height: 8px; border-radius: 4px;">
+                        <div style="background: var(--accent); width: 92%; height: 100%; border-radius: 4px;"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Dominio de JavaScript</h3>
+                    <p class="value">65%</p>
+                    <div style="background: #334155; height: 8px; border-radius: 4px;">
+                        <div style="background: var(--warning); width: 65%; height: 100%; border-radius: 4px;"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="table-wrapper">
+                <h3>Registro de Sesiones de Estudio</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Tema</th>
+                            <th>Duración</th>
+                            <th>Puntos de Skill</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12 Mar 2024</td>
+                            <td>CSS Grid Avanzado</td>
+                            <td>2h 30m</td>
+                            <td>+15 XP</td>
+                        </tr>
+                        <tr>
+                            <td>11 Mar 2024</td>
+                            <td>Flexbox Layouts</td>
+                            <td>1h 45m</td>
+                            <td>+10 XP</td>
+                        </tr>
+                        <tr>
+                            <td>10 Mar 2024</td>
+                            <td>Semántica HTML5</td>
+                            <td>3h 00m</td>
+                            <td>+20 XP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

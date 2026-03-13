@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFlow - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- BARRA LATERAL -->
+        <nav class="sidebar">
+            <div class="logo">Dev<span>Flow</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><span>Dashboard</span></a></li>
+                <li><a href="stats.html"><span>Estadísticas</span></a></li>
+                <li><a href="tasks.html"><span>Tareas</span></a></li>
+                <li><a href="config.html"><span>Ajustes</span></a></li>
+            </ul>
+            <div class="sidebar-footer">v1.0.4 Release</div>
+        </nav>
+
+        <!-- CONTENIDO -->
+        <main class="main-content">
+            <header>
+                <h1>Hola, Desarrollador</h1>
+                <p>Aquí tienes el resumen de tu actividad de hoy.</p>
+            </header>
+
+            <section class="grid-cards">
+                <div class="card">
+                    <h3>Proyectos Totales</h3>
+                    <p class="value">08</p>
+                    <p style="color: var(--success); font-size: 0.8rem;">+2 este mes</p>
+                </div>
+                <div class="card">
+                    <h3>Horas de Código</h3>
+                    <p class="value">124h</p>
+                    <p style="color: var(--accent); font-size: 0.8rem;">Promedio: 4h/día</p>
+                </div>
+                <div class="card">
+                    <h3>Tareas Pendientes</h3>
+                    <p class="value">05</p>
+                    <p style="color: var(--warning); font-size: 0.8rem;">3 críticas</p>
+                </div>
+            </section>
+
+            <section class="table-wrapper">
+                <h3>Proyectos Recientes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Lenguaje</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>E-Commerce App</td>
+                            <td>React / Node</td>
+                            <td><span class="badge success">Activo</span></td>
+                        </tr>
+                        <tr>
+                            <td>Portfolio Personal</td>
+                            <td>HTML / CSS</td>
+                            <td><span class="badge success">Finalizado</span></td>
+                        </tr>
+                        <tr>
+                            <td>Bot Discord</td>
+                            <td>Python</td>
+                            <td><span class="badge warning">En espera</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
